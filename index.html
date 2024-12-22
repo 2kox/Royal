@@ -68,10 +68,15 @@
         }
 
         .link img {
-            width: 24px;
-            height: 24px;
+            width: 24px; /* Reset other logos to original size */
+            height: 24px; /* Ensure uniform aspect ratio */
             margin-right: 10px;
             background: transparent;
+        }
+
+        .link[href="https://forms.gle/uyNE7zz2yYF2jevk9"] img {
+            width: 16px; /* Smaller size for the Blacklist logo */
+            height: 16px; /* Ensure uniform aspect ratio */
         }
 
         .link:hover {
