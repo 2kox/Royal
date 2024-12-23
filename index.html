@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="manifest" href="/manifest.json">
 <head>
-<link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
-<meta name="theme-color" content="#ffffff">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Royal Group">
-<link rel="apple-touch-icon" href="./logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>𝐑𝐨𝐲𝐚𝐥 𝐆𝐫𝐨𝐮𝐩</title>
@@ -142,18 +136,5 @@
     <footer>
         &copy; 𝐑𝐨𝐲𝐚𝐥 𝐆𝐫𝐨𝐮𝐩
     </footer>
-	
-	<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', async () => {
-    try {
-      const registration = await navigator.serviceWorker.register('./service-worker.js');
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    } catch (err) {
-      console.log('ServiceWorker registration failed: ', err);
-    }
-  });
-}
-</script>
 </body>
 </html>
